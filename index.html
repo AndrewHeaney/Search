@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="slidebars.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<div class="sb-slidebar sb-left" id="side_bar">
@@ -16,6 +18,8 @@
 			<li><a href="https://docs.google.com/document/d/1kQKM49bnzM2poqo9dpZI-pYlMtpK_JSHseDMk8J0vDA/edit"><img src="docs.png" class="icon"></a></li>		
 		</ul>
 	</div>
+
+
 	<div id="sb-site">
 	<header>
 	    <div id="blank"></div>
@@ -24,11 +28,19 @@
 			<div class="toggletwo"></div>
 			<div class="togglethree"></div>
 		</div>
+
 		<img src="logo.jpg" class="logo">
 		<a href="chrome://settings/">Settings</a>
 	</header>
-		<div class="search"><input type="text" placeholder="|"/></div>
-	</div>
+
+	<form method="get"  action="http://www.google.com/search" target="_blank">
+		<div class="search">
+			<input type="text" placeholder="|"/>
+			<input type="hidden" name="" value="www.google.com">
+		</div>
+	</form>
+
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="slidebars.min.js"></script>
 <script>
@@ -38,5 +50,6 @@
     });
   }) (jQuery);
 </script>
+
 </body>
 </html>
